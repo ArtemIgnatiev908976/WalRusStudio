@@ -34,30 +34,34 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 <!-- Navbar nav -->
-                <div class="collapse navbar-collapse" id="navbar-main-collapse">
-                    <ul class="navbar-nav align-items-lg-center">
+                <div class="collapse navbar-collapse" id="navbar-main-collapse ">
+                    <ul class="navbar-nav align-items-lg-center" id="menu">
                         <!-- Home - Overview  -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#headers-header-9">Главная</a>
+                        <li class="nav-item active ">
+                            <a class="nav-link " href="#headers-header-4">Главная</a>
                         </li>
                         <!-- Pages menu -->
                         <li class="nav-item active">
-                            <a class="nav-link" href="./pages/cart/cart-maker.html">Создать задание</a>
+                            <a class="nav-link" href="#headers-header-4">О нас</a>
                         </li>
                         <!-- Sections menu -->
                         <li class="nav-item active">
-                            <a class="nav-link" href="pages/tasks/tasks.html">Все задания</a>
+                            <a class="nav-link" href="#3">Услуги и цены</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="./pages/account/worker.html">Исполнители</a>
+                            <a class="nav-link" href="#headers-header-4">Портфолио</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#headers-header-4">Контакты</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./pages/support/faq.html">Помощь</a>
+                        <li class="nav-item active ">
+
+                            <a class="nav-link" href="./pages/support/faq.html">+79093434715</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="pages/authentication/basic-login.html">Войти</a>
+                            <a class="nav-link" href="pages/authentication/basic-login.html">Заказать звонок</a>
                         </li>
 
                     </ul>
@@ -225,7 +229,7 @@
 
 
 
-        <section class="slice slice-lg">
+        <section class="slice slice-lg" id="3">
             <div class="container">
                 <div class="mb-5 text-center">
                     <h3 class=" mt-4">НАШИ УСЛУГИ</h3>
@@ -993,8 +997,8 @@
 
 
 
-
-    <!-- Customizer modal -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- скролл -->
 
     <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
     <script src="assets/js/purpose.core.js"></script>
@@ -1015,6 +1019,20 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-104437451-1');
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
     </script>
 </body>
 
