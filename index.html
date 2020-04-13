@@ -971,7 +971,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-control-label  text-white">Email</label>
-                                        <input class="form-control" type="email" placeholder="email@example.com">
+                                        <input name="_replyto" class="form-control" type="email" placeholder="email@example.com">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -996,6 +996,11 @@
                                 <button type="button" class="btn btn-white rounded-pill">Оставить заявку</button>
                                 <span class="d-block mt-4 text-sm">Мы свяжемся с вами в течении 24х часов.</span>
                             </div>
+
+                            <input type="hidden" name="_next" value="//site.io/index.html">
+                            <input type="hidden" name="_subject" value="Новый заказ!">
+                            <input type="hidden" name="_cc" value="ignatev.artem.nik@gmail.com">
+                            <input type="text" name="_gotcha" style="display: none">
                         </form>
                     </div>
                 </div>
