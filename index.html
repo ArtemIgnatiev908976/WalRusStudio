@@ -23,45 +23,39 @@
         <!-- Topbar -->
 
         <!-- Main navbar -->
-        <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
+        <nav class="sticky-top navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
             <div class="container px-lg-0">
                 <!-- Logo -->
                 <a class="navbar-brand mr-lg-5" href="index.html">
                     <img alt="Image placeholder" src="assets/img/brand/favicon.png" id="navbar-logo" style="height: 50px;">
                 </a>
                 <!-- Navbar collapse trigger -->
-                <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="navbar-toggler pr-0 collapsed" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- Navbar nav -->
-                <div class="collapse navbar-collapse" id="navbar-main-collapse ">
-                    <ul class="navbar-nav align-items-lg-center" id="menu">
+                <div class="navbar-collapse collapse" id="navbar-main-collapse" style="">
+                    <ul class="navbar-nav align-items-lg-center">
                         <!-- Home - Overview  -->
-                        <li class="nav-item active ">
-                            <a class="nav-link " href="#headers-header-4">Главная</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#headers-header-9" data-scroll-to>Главная</a>
                         </li>
                         <!-- Pages menu -->
                         <li class="nav-item active">
-                            <a class="nav-link" href="#headers-header-4">О нас</a>
+                            <a class="nav-link" href="#3" data-scroll-to>Наши услуги</a>
                         </li>
                         <!-- Sections menu -->
                         <li class="nav-item active">
-                            <a class="nav-link" href="#3">Услуги и цены</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#headers-header-4">Портфолио</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#headers-header-4">Контакты</a>
+                            <a class="nav-link" href="#projects-projects-1" data-scroll-to>Портфолио</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item active ">
+                        <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                            <a class="nav-link" href="docs/changelog.html" target="_blank">+7(909)343-47-15</a>
 
-                            <a class="nav-link" href="./pages/support/faq.html">+79093434715</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="pages/authentication/basic-login.html">Заказать звонок</a>
+                        <li class="nav-item d-lg-none d-xl-block">
+                            <a class="nav-link" href="docs/changelog.html" target="_blank">Заказать звонок</a>
                         </li>
 
                     </ul>
@@ -72,10 +66,11 @@
     <!-- Omnisearch -->
 
     <div class="main-content">
+
         <!-- Header (v1) -->
         <div id="headers-header-4" title="headers/header-4.html">
-            <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" data-offset-top="#header-main" style="background-image: url(&quot;assets/img/backgrounds/img-11.jpg&quot;); padding-top: 147.188px;">
-                <div class="spotlight-holder pt-5 pb-7 py-lg-0" style="height: 594px;">
+            <section class="spotlight bg-cover bg-size--cover" data-offset-top="#header-main" style="background-image: url(&quot;assets/img/backgrounds/img-11.jpg&quot;); padding-top: 147.188px;">
+                <div class="spotlight-holder pt-5 pb-7 py-lg-0" style="height: 885px;">
                     <span class="mask bg-gradient-primary opacity-6"></span>
                     <div class="container d-flex align-items-center">
                         <div class="col">
@@ -85,22 +80,34 @@
                                     <h1 class="text-white lh-150 mb-4">Создаем сайты и логотипы в срок.</h1>
 
 
+
                                     <span class="clearfix"></span>
                                     <a href="#" class="btn btn-white rounded-pill btn-icon mt-5">
                                         <span class="btn-inner--text">Получить консультацию</span>
-                                        <span class="btn-inner--icon"><i class="far fa-angle-right"></i></span>
+
+                                        <span class="btn-inner--icon"></i></span>
+
+
                                     </a>
+
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="#sct-what-we-do" class="tongue tongue-bottom tongue-section-secondary" data-scroll-to>
+                    <i class="far fa-angle-down"></i>
+                </a>
             </section>
+
         </div>
         <!-- Features (v1) -->
 
         <!-- Features (v2) -->
         <section class="slice slice-lg" id="sct-what-we-do">
+
             <div class="container">
                 <div class="row row-grid">
                     <div class="row">
@@ -109,8 +116,8 @@
                                 <div class="card-body">
                                     <div class="">
                                         <div class="pb-5">
-                                            <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
-                                                <i class="far fa-file-archive"></i>
+                                            <div class="icon bg-success text-white rounded-circle icon-lg icon-shape shadow ">
+                                                <i class="far fa-file-archive hover-rotate-360 "></i>
                                             </div>
                                         </div>
                                         <h5 class="font-weight-bold">РАЗРАБОТКА САЙТА</h5>
@@ -124,8 +131,8 @@
                                 <div class="card-body">
                                     <div class="">
                                         <div class="pb-5">
-                                            <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
-                                                <i class="far fa-palette"></i>
+                                            <div class="icon bg-warning text-white rounded-circle icon-lg icon-shape shadow">
+                                                <i class="far fa-palette hover-rotate-360"></i>
                                             </div>
                                         </div>
                                         <h5 class="font-weight-bold">ДИЗАЙН САЙТА</h5>
@@ -141,7 +148,7 @@
                                     <div class="">
                                         <div class="pb-5">
                                             <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
-                                                <i class="far fa-tools"></i>
+                                                <i class="far fa-tools hover-rotate-360"></i>
                                             </div>
                                         </div>
                                         <h5 class="font-weight-bold">РАЗВИТИЕ И ПОДДЕРЖКА</h5>
@@ -164,11 +171,15 @@
                 <div class="row no-gutters align-items-md-center text-center text-md-left">
                     <div class="card hover-shadow-lg hover-scale-110 order-2 col-lg-7 ml--100">
                         <div class="card-body p-5">
-                            <h6 class="text-muted"><strong></strong>РАЗРАБОТКА И СОЗДАНИЕ САЙТОВ В МОСКВЕ И ПО ВСЕЙ РОССИИ </strong>
+                            <h4 class="font-weight-bold">Чем отличается наш подход?</h4>
+
                             </h6>
-                            <p class="h4 lh-150">
-                                Мы применяем собственный подход, уделяем достаточно времени каждому проекту и не работаем на потоке. Всегда готовы предложить нестандартные решения по целому комплексу услуг разработки и дизайна. Делаем всё, чтобы ваш сайт красиво и эффективно выполнял
-                                задачи компании.
+                            <p class="h5 lh-150">
+                                Вы инвестируете в создание Landing Page, который раскрывает вашу идею перед целевой аудиторией и отстраивает предложение. Прошли времена одностраничников, в которых нет ни целей, ни логики, ни общей идеи.
+                            </p>
+
+                            <p class="h5 lh-150">
+                                Ежедневно вы пачками закрываете такие страницы и уже через секунду забываете о них навсегда. Поэтому ваш продукт мы разработаем не только в эксклюзивной упаковке, но и заложим в фундамент концепции ваши бизнес-цели.
                             </p>
                         </div>
                     </div>
@@ -245,7 +256,7 @@
                             <div class="card-body py-4">
                                 <div class="d-flex align-items-start">
                                     <div class="icon text-primary rounded-circle">
-                                        <i class="far fa-terminal"></i>
+                                        <i class="far fa-user"></i>
                                     </div>
                                     <div class="icon-text pl-4">
                                         <h5 class="ma-0 ">ИНДИВИДУАЛЬНЫЙ САЙТ</h5>
@@ -262,7 +273,7 @@
                             <div class="card-body py-4">
                                 <div class="d-flex align-items-start">
                                     <div class="icon text-primary rounded-circle">
-                                        <i class="far fa-expand"></i>
+                                        <i class="far fa-palette"></i>
                                     </div>
                                     <div class="icon-text pl-4">
                                         <h5 class="ma-0 ">САЙТ С РАЗРАБОТКОЙ ДИЗАЙНА</h5>
@@ -284,9 +295,9 @@
                                         <i class="far fa-star"></i>
                                     </div>
                                     <div class="icon-text pl-4">
-                                        <h5 class="ma-0 ">РАЗРАБОТКА ЛОГОТИПА</h5>
-                                        <p class="mb-0">Разработка фирменного логотипа компании - одна из основных наших услуг. Все логотипы разрабатываем с нуля (индивидуальные варианты, в векторном формате). Не используем шаблоны. при необходимости вносим корректировки.
-                                            передаем исходные файлы в разных форматах..</p>
+                                        <h5 class="ma-0 ">РАЗРАБОТКА ЛОГОТИПА И ФИРМЕННОГО СТИЛЯ</h5>
+                                        <p class="mb-0">Логотип - это лицо компании, а фирменный стиль - неотъемлемая часть ее имиджа. Фирменная символика, отражающая направлении деятельности или продукции компании, делает её более заметной и узнаваемой. Мы разрабатываем
+                                            фирменный стиль на основе вашего готового логотипа или с разработкой индивидуального логотипа</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,11 +308,12 @@
                             <div class="card-body py-4">
                                 <div class="d-flex align-items-start">
                                     <div class="icon text-primary rounded-circle">
-                                        <i class="far fa-smile-wink"></i>
+                                        <i class="far fa-signal"></i>
                                     </div>
                                     <div class="icon-text pl-4">
-                                        <h5 class="ma-0 ">СОЗДАНИЕ САЙТА НА ОСНОВЕ ШАБЛОНА</h5>
-                                        <p class="mb-0">Шаблон – это основа для создания сайта, он позволяют сократить сроки и бюджет на разработку, когда нет необходимости разрабатывать уникальный дизайн с нуля. Мы корректируем шаблон под тематику бизнеса заказчика.</p>
+                                        <h5 class="ma-0 ">ПРОДВИЖЕНИЕ САЙТА</h5>
+                                        <p class="mb-0">Мы произведем анализ, соберем ключевые слова, напишем SEO тексты, оптимизируем и продвинем ваш сайт в ТОП! Сайт будет продвигаться благодаря поведенческим факторам, оптимизации и ссылочной массе - ссылки в социальных
+                                            сетях и статьи с ссылкой вашего ресурса на других сайтах. А так же многие другие наши действия, приведут много новых посетителей и клиентов в вашу компанию!</p>
                                     </div>
                                 </div>
                             </div>
@@ -328,8 +340,9 @@
                         <div class="col-lg-5">
                             <div class="text-center text-lg-left">
 
-                                <h1 class="text-white mt-4 mb-3">Разработка сайтов - преимущества</h1>
-                                <p class="lead lh-180 text-white">Профессиональный дизайн Создание дизайна с учетом рынка, продукта, пожеланий заказчика, а также на основании накопленных данных о поведении пользователей.</p>
+                                <h1 class="text-white mt-4 mb-3">Почему стоит работать с нами?</h1>
+                                <p class="lead lh-180 text-white">Мы применяем собственный подход, уделяем достаточно времени каждому проекту и не работаем на потоке. Всегда готовы предложить нестандартные решения по целому комплексу услуг разработки и дизайна. Делаем всё, чтобы ваш сайт
+                                    красиво и эффективно выполнял задачи компании.</p>
                                 <div class="mt-6">
                                     <a href="#" class="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
                                         <span class="btn-inner--icon"><i class="far fa-fire"></i></span>
@@ -378,7 +391,7 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <span class="h6 mb-0">Качественный дизайн, рассчитанный на длительный срок</span>
+                                                    <span class="h6 mb-0">Привлечение клиентов за счет продвижения сайта в топы поисковых сетей</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -417,7 +430,7 @@
                             <div class="icon icon-lg text-danger">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <span class="d-block mt-4 h3 text-danger">97%</span>
+                            <span class="d-block mt-4 h3 text-danger">86%</span>
                             <span class="d-block mt-2 h6">Счастливых клиентов</span>
                         </div>
                     </div>
@@ -444,8 +457,8 @@
                             <div class="icon icon-lg text-info">
                                 <i class="far fa-layer-group"></i>
                             </div>
-                            <span class="d-block mt-4 h2 text-info">990</span>
-                            <span class="d-block mt-2 h6">Новых компонентов</span>
+                            <span class="d-block mt-4 h2 text-info">225</span>
+                            <span class="d-block mt-2 h6">Продвигаемых сайтов</span>
                         </div>
                     </div>
                 </div>
@@ -896,9 +909,10 @@
 
 
 
+    <div title="headers/team.html">
 
-    <div id="headers-team" title="headers/team.html">
-        <section class="slice slice-lg bg-primary overflow-hidden">
+
+        <section class=" slice slice-lg bg-primary overflow-hidden">
             <!-- SVG background -->
             <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
                 <figure class="w-100 d-none d-lg-block">
@@ -986,16 +1000,27 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
 
 
+    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
 
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
-
+    <script src="assets/libs/typed.js/lib/typed.js"></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <!-- скролл -->
@@ -1022,18 +1047,19 @@
     </script>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#menu").on("click", "a", function(event) {
-                event.preventDefault();
-                var id = $(this).attr('href'),
-                    top = $(id).offset().top;
-                $('body,html').animate({
-                    scrollTop: top
-                }, 1500);
-            });
-        });
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
