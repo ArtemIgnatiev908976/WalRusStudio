@@ -951,6 +951,30 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+
+
+
+                        <form id="my-form"
+                              action="https://formspree.io/xqkdwzab"
+                              method="POST"
+                        >
+                            <label>Email:</label>
+                            <input type="email" name="email" />
+                            <label>Message:</label>
+                            <input type="text" name="message" />
+                            <button id="my-form-button">Submit</button>
+                            <p id="my-form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
                         <form   action="https://formspree.io/xqkdwzab"
                                 method="POST">
                             <div class="row">
@@ -971,7 +995,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-control-label  text-white">Email</label>
-                                        <input name="_replyto" class="form-control" type="email" placeholder="email@example.com">
+                                        <input  class="form-control" type="email" name="email" placeholder="email@example.com">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -988,12 +1012,13 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="form-control-label  text-white">Краткое описание сайта</label>
-                                        <textarea class="form-control" data-toggle="autosize" placeholder="Например: сайт для фото студии" rows="3" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 98px;"></textarea>
+                                        <textarea type="text" name="message" class="form-control" data-toggle="autosize" placeholder="Например: сайт для фото студии" rows="3" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 98px;"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-white rounded-pill">Оставить заявку</button>
+                                <button type="submit" id="my-form-button" class="btn btn-white rounded-pill">Оставить заявку</button>
+                                <p id="my-form-status"></p>
                                 <span class="d-block mt-4 text-sm">Мы свяжемся с вами в течении 24х часов.</span>
                             </div>
 
@@ -1009,21 +1034,7 @@
                         </form>
 
 
-                        <form id="my-form"
-                              action="https://formspree.io/xqkdwzab"
-                              method="POST"
-                        >
-                            <label>Email:</label>
-                            <input type="email" name="email" />
-                            <label>Message:</label>
-                            <input type="text" name="message" />
-                            <button id="my-form-button">Submit</button>
-                            <p id="my-form-status"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
 
 
