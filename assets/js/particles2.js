@@ -1,4 +1,4 @@
-particlesJS("particles-js", {
+particlesJS("particles-js2", {
     "particles": {
         "number": {"value": 76, "density": {"enable": true, "value_area": 800}},
         "color": {"value": "#ffffff"},
@@ -59,14 +59,14 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
-var count_particles, stats, update;
+var count_particles, stats2, update;
 stats = new Stats;
 stats.setMode(0);
 stats.domElement.style.position = 'absolute';
 stats.domElement.style.left = '0px';
 stats.domElement.style.top = '0px';
 document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
+count_particles = document.querySelector('.js-count-particles2');
 update = function () {
     stats.begin();
     stats.end();
