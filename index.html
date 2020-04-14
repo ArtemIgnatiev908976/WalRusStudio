@@ -20,6 +20,20 @@
 
 <body>
 
+
+<!-- preloader -->
+<div class="preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+
+
+
+
+
+
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
 
 <!-- VK Widget -->
@@ -1426,6 +1440,19 @@
             <script type="text/javascript">
                 VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {tooltipButtonText: "Есть вопрос?"});
             </script>
+
+
+            <script>
+                window.onload = function () {
+                    document.body.classList.add('loaded_hiding');
+                    window.setTimeout(function () {
+                        document.body.classList.add('loaded');
+                        document.body.classList.remove('loaded_hiding');
+                    }, 500);
+                }
+            </script>
+
+
 
 </body>
 
