@@ -28977,3 +28977,13 @@ canvas {
 
 
 
+
+
+
+/*pulse button*/
+
+
+.pulse-button {
+    -webkit-animation: pulse 2.0s infinite;
+
+}
