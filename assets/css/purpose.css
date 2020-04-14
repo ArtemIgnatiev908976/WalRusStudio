@@ -28873,6 +28873,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+
 }
 
 
@@ -28882,6 +28883,18 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+
+
+#particles-js3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 /* ---- stats.js ---- */
 .count-particles {
