@@ -73,7 +73,7 @@
 
             <section class="spotlight bg-cover bg-size--cover" data-offset-top="#header-main" style="background-image: url(&quot;assets/img/backgrounds/img-11.jpg&quot;); padding-top: 147.188px;">
 
-                <div class="spotlight-holder pt-5 pb-7 py-lg-0" style="height: 885px;">
+                <div class="spotlight-holder pt-5 pb-7 py-lg-0" style="height: 900px;">
                     <div id="particles-js"></div>
                     <span class="mask bg-gradient-primary opacity-6"></span>
                     <div class="container d-flex align-items-center">
@@ -88,7 +88,7 @@
 
 
                                     <span class="clearfix"></span>
-                                    <a href="#" class="btn btn-white rounded-pill btn-icon mt-5  ">
+                                    <a href="#" class="btn btn-white rounded-pill btn-icon mt-5   ">
                                         <span class="btn-inner--text">Получить консультацию</span>
 
 
@@ -190,7 +190,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="order-1 col-lg-6 mb-4 mb-lg-0">
+                    <div class="order-1 col-lg-6 mb-4 mb-lg-0 ">
                         <img alt="Image placeholder" src="assets/img/theme/light/img-6-800x600.jpg" class="img-fluid rounded shadow">
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                 <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
 
                 </div>
-                <div class="container position-relative zindex-100 pt-7">
+                <div class="container position-relative zindex-100 pt-7 animated mov">
                     <div class="row align-items-center">
                         <div class="col-lg-6 py-6 py-lg-9">
                             <h1 class="text-white mb-4 lh-110">Представьте свой персональный веб-сайт.</h1>
@@ -217,12 +217,12 @@
                                     <p class="lead text-white lh-180">Мы любим создавать веб-сайты, которые выглядят привлекательно и эффективно работают на любой платформе.</p>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-white btn-icon rounded-pill mt-5 animated infinite pulse delay-2s">
+                            <a href="#" class="btn btn-white btn-icon rounded-pill mt-5 animated infinite pulse delay-1s ">
                                 <span class="btn-inner--icon"><i class="far fa-fire"></i></span>
                                 <span class="btn-inner--text">Заказать</span>
                             </a>
                         </div>
-                        <div class="col-xl-4 col-lg-5 offset-lg-1 d-none d-lg-block">
+                        <div class="col-xl-4 col-lg-5 offset-lg-1 d-none d-lg-block ">
                             <div class="hover-scale-110">
                                 <img alt="Image placeholder" src="assets/img/theme/light/mobile-3.jpg" class="img-fluid img-center rounded shadow-lg">
                             </div>
@@ -248,7 +248,7 @@
 
 
         <section class="slice slice-lg" id="3">
-            <div class="container">
+            <div class="container animated mov1">
                 <div class="mb-5 text-center">
                     <h3 class=" mt-4">НАШИ УСЛУГИ</h3>
                     <div class="fluid-paragraph mt-3">
@@ -258,7 +258,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 ">
                         <div class="card hover-shadow-lg hover-scale-110">
                             <div class="card-body py-4">
                                 <div class="d-flex align-items-start">
@@ -999,7 +999,7 @@
                             </div>
 
 
-                            <h1 id="typeanim2" class="text-white lh-150 mb-4">123</h1>
+<!--                            <h1 id="typeanim2" class="text-white lh-150 mb-4">123</h1>-->
 
 
 
@@ -1116,9 +1116,35 @@
                     </script>
 
 
+                    <script>
+
+                        $(window).scroll(function (){
+                            $(' .mov').each(function (){
+                                var imagePos = $(this).offset().top;
+                                var topOfWindow = $(window).scrollTop();
+                                if (imagePos < topOfWindow+250) {
+                                    $(this).addClass('bounceInUp');
+                                }
+                            });
+                        });
 
 
+                    </script>
 
+                    <script>
+
+                        $(window).scroll(function (){
+                            $(' .mov1').each(function (){
+                                var imagePos = $(this).offset().top;
+                                var topOfWindow = $(window).scrollTop();
+                                if (imagePos < topOfWindow+250) {
+                                    $(this).addClass('bounceInLeft');
+                                }
+                            });
+                        });
+
+
+                    </script>
 
 
 
