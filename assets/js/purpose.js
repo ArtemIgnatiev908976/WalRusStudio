@@ -1143,27 +1143,27 @@ var GoogleMap = (function() {
 // Autosize textarea
 //
 
-var TextareaAutosize = (function() {
-
-	// Variables
-
-	var $textarea = $('[data-toggle="autosize"]');
-
-
-	// Methods
-
-	function init() {
-		autosize($textarea);
-	}
-
-
-	// Events
-
-	if ($textarea.length) {
-		init();
-	}
-
-})();
+// var TextareaAutosize = (function() {
+//
+// 	// Variables
+//
+// 	var $textarea = $('[data-toggle="autosize"]');
+//
+//
+// 	// Methods
+//
+// 	function init() {
+// 		autosize($textarea);
+// 	}
+//
+//
+// 	// Events
+//
+// 	if ($textarea.length) {
+// 		init();
+// 	}
+//
+// })();
 
 //
 // Countdown
