@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description content="Quick Website UI Kit is an innovative HTML template solution which combines beautiful design and flawless functionality.">
+    <meta name=author content=Webpixels>
+    <title>Quick – Website UI Kit</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%
+            }
+            100% {
+                width: 0;
+                height: 0
+            }
+        }
+        
+        body>div.preloader {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        body:not(.loaded)>div.preloader {
+            opacity: 1
+        }
+        
+        body:not(.loaded) {
+            overflow: hidden
+        }
+        
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector("body").classList.add("loaded")
+            }, 300)
+        })
+    </script>
+    <link rel=icon href=assets/img/brand/favicon.png type=image/png>
+    <link rel=stylesheet href=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css>
+    <link rel=stylesheet href=assets/libs/@fortawesome/fontawesome-free/css/all.min.css>
+    <link rel=stylesheet href=assets/css/quick-website.css id=stylesheet>
+</head>
+
+<body>
+    <div class=preloader>
+        <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+    </div>
+
+    <header class="" id=header-main>
+        <nav class="navbar navbar-main navbar-expand-lg navbar-light" id=navbar-main>
+            <div class=container>
+                <a class=navbar-brand href=index.html><img alt="Image placeholder" src=assets/img/brand/dark.svg id=navbar-logo> </a>
+                <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span
+                    class=navbar-toggler-icon></span></button>
+                <div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
+                    <div class=position-relative>
+                        <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><i
+                            data-feather=x></i></button>
+                    </div>
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block"><a class=nav-link href=overview.html data-scroll-to>Главная</a>
+                        </li>
+                        <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover><a class=nav-link href=#2 role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false data-scroll-to>Наши услуги</a>
+
+                        </li>
+                        <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover><a class=nav-link data-toggle=dropdown href=#3 aria-haspopup=true aria-expanded=false data-scroll-to>Почему мы?</a>
+                        </li>
+
+                        <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover><a class=nav-link href=#8 role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false data-scroll-to>Прайс</a>
+
+                        </li>
+                        <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle=hover><a class=nav-link href=#9 role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false data-scroll-to>Контакты</a>
+
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                        <li class=nav-item><a class=nav-link href=pages/authentication/login-basic.html>+7999912312323</a>
+                        </li>
+                        <li class=nav-item><a href=https://themes.getbootstrap.com/product/quick-website-ui-kit-2/ class="btn btn-sm
+                            btn-primary btn-icon ml-3" target="_blank" data-toggle="modal" data-target="#modal_success"><span class=btn-inner--icon><i
+                            data-feather=shopping-bag></i></span> <span class=btn-inner--text>Заказать звонок</span></a></li>
+                    </ul>
+                    <div class="d-lg-none px-4 text-center"><a href=https://themes.getbootstrap.com/product/quick-website-ui-kit-2/ class="btn btn-block btn-sm
+                        btn-primary" target=_blank>Purchase now</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id=omnisearch class=omnisearch>
+
+    </div>
+    <section class="slice py-5" id="1">
+        <div class=container>
+            <div class="row row-grid align-items-center">
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+                    <figure class=w-100><img alt="Image placeholder" src=assets/img/svg/illustrations/illustration-1.svg class="img-fluid mw-md-120"></figure>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
+                    <h1 class="display-4 text-center text-md-left mb-3">WalRus Design Studio <strong class=text-primary>Развиваем</strong></h1>
+                    <p class="lead text-center text-md-left text-muted">Работаем по всей территории РФ
+                    </p>
+                    <div class="text-center text-md-left mt-5"><a href=# class="btn btn-primary btn-icon" target="_blank" data-toggle="modal" data-target="#modal_success"><span
+                        class=btn-inner--text>Заказать</span><span class=btn-inner--icon> <i
+                        data-feather=arrow-right></i> </span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6" id="2">
+        <div class=container>
+            <div class="row justify-content-lg-end">
+                <div class="col-lg-5 text-lg-right">
+                    <h6 class="display-4 text-danger">244</h6>
+                    <p class="lh-180 mb-3">Мы любим создавать веб-сайты, которые выглядят привлекательно и эффективно работают на любой платформе.</p>
+                </div>
+                <div class=col-lg-6>
+                    <h3 class="display-4 lh-130">Успешно завершенных проектов и логотипов</h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class=col-md-4>
+                    <div class="card border-0 bg-soft-danger hover-translate-y-n10">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5"><img src=assets/img/svg/illustrations/illustration-5.svg class="img-fluid img-center" style=height:200px alt=Illustration>
+                            </div>
+                            <h5 class="h4 lh-130 text-dark mb-3">РАЗРАБОТКА САЙТА</h5>
+                            <p class="text-dark opacity-6 mb-0">Разработка сайта – итерационный процесс, требующий взаимодействия заказчика и разработчика. В процессе тестирования может возникнуть необходимость внесения доработок или реализация новых идей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=col-md-4>
+                    <div class="card border-0 bg-soft-success mt-lg-5 hover-translate-y-n10">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5"><img src=assets/img/svg/illustrations/illustration-6.svg class="img-fluid img-center" style=height:200px alt=Illustration>
+                            </div>
+                            <h5 class="h4 lh-130 text-dark mb-3">ДИЗАЙН САЙТА</h5>
+                            <p class="text-dark opacity-6 mb-0">Дизайн сайта обязан способствовать достижению конкретных результатов и не должен являться самоцелью. Качественный дизайн этим и отличается от произведения искусства – помимо художественной ценности, он помогает решить бизнес-задачи.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=col-md-4>
+                    <div class="card border-0 bg-soft-warning mt-lg-7 hover-translate-y-n10">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5"><img src=assets/img/svg/illustrations/illustration-7.svg class="img-fluid img-center" style=height:200px alt=Illustration>
+                            </div>
+                            <h5 class="h4 lh-130 text-dark mb-3">РАЗВИТИЕ И ПОДДЕРЖКА</h5>
+                            <p class="text-dark opacity-6 mb-0">Чтобы не терять потенциальных клиентов, важно поддерживать актуальность информации на сайте. Чтобы проект работал эффективно и приносил прибыль, он должен отражать динамику компании, развиваться и обновляться.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg" id="3">
+        <div class=container>
+            <div class="row row-grid justify-content-around align-items-center">
+                <div class="col-lg-6 order-lg-2 ml-lg-auto pl-lg-6">
+                    <h5 class="h2 mt-4">Почему стоит работать с нами?</h5>
+                    <p class="lead lh-190 my-4">Мы применяем собственный подход, уделяем достаточно времени каждому проекту и не работаем на потоке. Всегда готовы предложить нестандартные решения по целому комплексу услуг разработки и дизайна. Делаем всё, чтобы ваш сайт красиво
+                        и эффективно выполнял задачи компании.</p>
+                    <ul class=list-unstyled>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3"><i class="fas fa-store-alt"></i></div>
+                                </div>
+                                <div><span class="h6 mb-0">Осуществляем гарантийную поддержку сайта в течение 1 года</span></div>
+                            </div>
+                        </li>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3"><i class="fas fa-palette"></i></div>
+                                </div>
+                                <div><span class="h6 mb-0">Адаптивный дизайн — по умолчанию</span></div>
+                            </div>
+                        </li>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-success icon-sm rounded-circle mr-3"><i class="fas fa-cog"></i></div>
+                                </div>
+                                <div><span class="h6 mb-0">Привлечение клиентов за счет продвижения сайта в топы поисковых сетей</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="position-relative zindex-100"><img alt="Image placeholder" src=assets/img/svg/illustrations/illustration-2.svg class=img-fluid></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg" id="4">
+        <div class="container position-relative">
+            <div class="card shadow-lg border-0 zindex-100">
+                <div class="card-body px-5 py-5 text-center text-md-left">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h4 class="h5 mb-2">
+                                Если у вас остались вопросы, свяжитесь с нами</h4>
+                            <p class="mb-0">Наша служба поддержки доступна для вас в любое время.</p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right"><a href="#" class="btn btn-warning btn-icon rounded-pill"><span class="btn-inner--icon" target="_blank" data-toggle="modal" data-target="#modal_success"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-phone">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg> </span><span class="btn-inner--text"   data-target="#modal_success">Связаться</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10 position-absolute bottom-n3 left-n5"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8" style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve" class="injected-svg svg-inject fill-primary">
+                <path
+                    d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                </path>
+            </svg></div>
+            <div class="w-10 position-absolute top-n5 right-n5"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8" style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve" class="injected-svg svg-inject fill-dark">
+                <path
+                    d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                </path>
+            </svg></div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg" id="5">
+        <div class="container">
+            <div class="row row-grid justify-content-around align-items-center">
+                <div class="col-lg-5">
+                    <h5 class="h2">Закажите адаптивную версию сайта</h5>
+                    <p class="lead my-4">Профессиональная респонсивная верстка сайта позволяет просматривать содержимое ресурса независимо от размеров и характеристик экрана девайса. Динамичность шаблона обеспечивает сайту автоматическую подстройку под размер окна браузера</p>
+
+                </div>
+                <div class="col-lg-6"><img alt="Image placeholder" src="../../assets/img/svg/illustrations/illustration-10.svg" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="slice slice-lg" id="6">
+        <div class="container">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2 class="mt-4">Главная цель — ваша выгода от проекта, и опыт помогает нам находить лучшие решения.</h2>
+                    <div class="mt-2">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8"><img alt="Image placeholder" src="../../assets/img/svg/illustrations/illustration-9.svg" class="img-fluid"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card border-0 shadow-lg rounded-lg floating-sm">
+                        <div class="card-body">
+                            <h2 class="font-weight-bold text-center mb-0">95%</h2>
+                            <p class="text-center mb-0">Счастливых клиентов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 shadow-lg rounded-lg floating-lg">
+                        <div class="card-body">
+                            <h2 class="font-weight-bold text-center mb-0">24/7</h2>
+                            <p class="text-center mb-0">Служба поддержки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 shadow-lg rounded-lg floating-sm">
+                        <div class="card-body">
+                            <h2 class="font-weight-bold text-center mb-0">244</h2>
+                            <p class="text-center mb-0">Сделанных проектов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 shadow-lg rounded-lg floating-lg">
+                        <div class="card-body">
+                            <h2 class="font-weight-bold text-center mb-0">97</h2>
+                            <p class="text-center mb-0">Продвигаемых сайтов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg " id="7">
+        <div class="container position-relative">
+            <div class="card shadow-lg border-0 zindex-100">
+                <div class="card-body px-5 py-5 text-center text-md-left">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h4 class="h5 mb-2">
+                                Если у вас остались вопросы, свяжитесь с нами</h4>
+                            <p class="mb-0">Наша служба поддержки доступна для вас в любое время.</p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right"><a href="#" class="btn btn-warning btn-icon rounded-pill"><span class="btn-inner--icon"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-phone">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg> </span><span class="btn-inner--text" target="_blank" data-toggle="modal" data-target="#modal_success">Связаться</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10 position-absolute bottom-n3 left-n5"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8" style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve" class="injected-svg svg-inject fill-primary">
+                <path
+                    d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                </path>
+            </svg></div>
+            <div class="w-10 position-absolute top-n5 right-n5"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8" style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve" class="injected-svg svg-inject fill-dark">
+                <path
+                    d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                </path>
+            </svg></div>
+        </div>
+    </section>
+
+
+    <section class="slice slice-lg bg-section-dark pt-5 pt-lg-8" id="8">
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg>
+        </div>
+        <div class="container position-relative zindex-100">
+            <div class=col>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <div class="mt-4 mb-6">
+                            <h2 class="h1 text-white">Прайс</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice pt-0">
+        <div class="container position-relative zindex-100">
+            <div class=row>
+                <div class="col-xl-4 col-sm-6 mt-n7">
+                    <div class="card bg-soft-warning border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5">
+
+                            <div class=pl-4 text-centeer>
+                                <h5 class="lh-130 text-dark">Разработка логотипа</h5>
+                                <p class="text-dark opacity-6 "> от 5 тыс. / от 5 дней</p>
+                            </div>
+                        </div>
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-7.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mt-sm-n7">
+                    <div class="card bg-soft-success border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5">
+
+                            <div class=pl-4 text-centeer>
+                                <h5 class="lh-130 text-dark">Landing page</h5>
+                                <p class="text-dark opacity-6">от 15 тыс. / от 15 дней</p>
+                            </div>
+                        </div>
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-6.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-6 mt-xl-n7">
+                    <div class="card bg-soft border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5 p">
+
+                            <div class=pl-3 text-centeer>
+                                <h5 class="lh-130 text-dark">Корпоративный сайт</h5>
+                                <p class="text-dark opacity-6">от 50 тыс. / от 30 дней</p>
+                            </div>
+                        </div>
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-5.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-7">
+                <div class="col-xl-4 col-sm-6 mt-n7">
+                    <div class="card bg-soft-warning border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5">
+
+                            <div class=pl-4 text-centeer>
+                                <h5 class="lh-130 text-dark">Рекламная компания </h5>
+                                <p class="text-dark opacity-6">от 30 тыс.</p>
+                            </div>
+
+                        </div>
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-7.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-xl-4 col-sm-6 mt-sm-n7">
+                    <div class="card bg-soft border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5">
+
+                            <div class=pl-4 text-centeer>
+                                <h5 class="lh-130 text-dark text-center">Поддержка </h5>
+                                <p class="text-dark opacity-6 text-centeer">от 20 тыс. / на год</p>
+                            </div>
+                        </div>
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-6.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-6 mt-xl-n7">
+                    <div class="card bg-soft-warning border-0 mb-5 hover-scale-110">
+                        <div class="d-flex p-5 p">
+
+                            <div class=pl-3 text-centeer>
+                                <h5 class="lh-130 text-dark">Промо видео</h5>
+                                <p class="text-dark opacity-6">от 20 тыс. / от 10 дней</p>
+                            </div>
+                        </div>
+
+                        <div class=pb-5><img src=assets/img/svg/illustrations/illustration-5.svg class="img-fluid img-center" style=height:200px alt=Illustration></div>
+                        <div class="flex p-3 text-center">
+
+
+                            <a href="#" class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg " target="_blank" data-toggle="modal" data-target="#modal_success">Заказать</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="slice slice-lg" id="sct-form-contact">
+        <div class="container position-relative zindex-100" id="9">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h3>Оставьте вашу заявку</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form id="form-contact">
+                        <div class="form-group"><input class="form-control form-control-lg" type="text" placeholder="Имя" required=""></div>
+                        <div class="form-group"><input class="form-control form-control-lg" type="email" placeholder="mail@example.com" required=""></div>
+                        <div class="form-group"><input class="form-control form-control-lg" type="text" placeholder="+7(999)-999-99-99" required=""></div>
+
+                        <div class="text-center"><button type="reset" class="btn-reset d-none"></button> <button type="submit" class="btn btn-block btn-lg btn-primary mt-4" target="_blank" data-toggle="modal" data-target="#modal_success">Оставить заявку</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="modal modal-primary fade" id="modal_success" tabindex="-1" role="dialog" aria-labelledby="modal_success" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h6" id="modal_title_6">Оставьте вашу заявку</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-11">
+                                <!--                        <div class="mb-5 text-center ">-->
+
+                                <!--                            <h1 class=" mt-4  text-white">Оставьте вашу заявку</h1>-->
+
+                                <!--                        </div>-->
+                                <form id="my-form" action="https://formspree.io/mzbalzrw" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label   text-white">Имя</label>
+                                                <input type="text" name="name" class="form-control" placeholder="Имя">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label   text-white">Фамилия</label>
+                                                <input type="text" name="name" class="form-control" placeholder="Фамилия">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label   text-white">Email</label>
+                                                <input class="form-control" type="email" name="email" placeholder="email@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label  text-white">Телефон</label>
+                                                <input type="text" name="name" class="form-control" placeholder="+7 999 999 99 99">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!--                            <div class="row align-items-center">-->
+                                    <!--                                <div class="col-md-12">-->
+                                    <!--                                    <div class="form-group">-->
+                                    <!--                                        <label class="form-control-label  text-white">Краткое описание сайта</label>-->
+                                    <!--                                        <textarea class="form-control" placeholder="Например сайт для фото студии"-->
+                                    <!--                                                  rows="3"></textarea>-->
+                                    <!--                                    </div>-->
+                                    <!--                                </div>-->
+                                    <!--                            </div>-->
+                                    <div class="text-center mt-4 ">
+                                        <button type="submit" id="my-form-button" class="btn btn-warning rounded-pill animated infinite pulse delay-2s">Оставить
+                                        заявку
+                                    </button>
+
+                                        <span class="d-block mt-4 text-sm">Мы свяжемся с вами в течении 24х часов.</span>
+                                    </div>
+
+
+                                    <!--                            <h1 id="typeanim2" class="text-white lh-150 mb-4">123</h1>-->
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src=assets/libs/jquery/dist/jquery.min.js></script>
+        <script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+        <script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
+        <script src=assets/libs/feather-icons/dist/feather.min.js></script>
+        <script src=assets/libs/in-view/dist/in-view.min.js></script>
+        <script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
+        <script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
+        <script src=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
+        <script src=assets/js/quick-website.js></script>
+        <script>
+            feather.replace({
+                width: "1em",
+                height: "1em"
+            })
+        </script>
+        <script>
+            ! function(e, t, a, n, g) {
+                e[n] = e[n] || [], e[n].push({
+                    "gtm.start": (new Date).getTime(),
+                    event: "gtm.js"
+                });
+                var m = t.getElementsByTagName(a)[0],
+                    r = t.createElement(a);
+                r.async = !0, r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MF4DZVH", m.parentNode.insertBefore(r, m)
+            }(window, document, "script", "dataLayer")
+        </script>
+</body>
+
+</html>
